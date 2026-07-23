@@ -1,0 +1,1074 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Abhishek Verma — AI Engineer & Data Scientist</title>
+  <meta name="description"
+    content="Portfolio of Abhishek Verma — AI Engineer, ML Engineer, Data Scientist, Data Analyst, and Python Backend Engineer. Warm paper-cutout style design." />
+  <link rel="stylesheet" href="style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+</head>
+
+<body>
+
+  <!-- ═══════════════════════════════════════════════════════════
+     NAV
+════════════════════════════════════════════════════════════ -->
+  <nav id="main-nav">
+    <div class="nav-logo">
+      <span></span>
+      Abhishek<span style="color:var(--brown-deep)">.</span>verma
+    </div>
+    <ul class="nav-links">
+      <li><a href="#hero">Home</a></li>
+      <li><a href="#about">About</a></li>
+      <li><a href="#roles">What I Do</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </nav>
+
+  <!-- ═══════════════════════════════════════════════════════════
+     HERO — Paper Diorama
+════════════════════════════════════════════════════════════ -->
+  <section id="hero">
+
+    <!-- Diorama parallax layers -->
+    <div class="diorama" id="diorama">
+      <!-- Sky -->
+      <div class="diorama-layer layer-sky layer-1" data-speed="0.1"></div>
+
+      <!-- Clouds -->
+      <div class="diorama-layer layer-2" data-speed="0.18">
+        <div class="cloud cloud-1"></div>
+        <div class="cloud cloud-2"></div>
+        <div class="cloud cloud-3"></div>
+      </div>
+
+      <!-- Far hills -->
+      <div class="diorama-layer layer-3" data-speed="0.28" style="position:absolute;inset:0;">
+        <div class="hill-shape hill-1"></div>
+      </div>
+
+      <!-- Mid hills -->
+      <div class="diorama-layer layer-4" data-speed="0.4" style="position:absolute;inset:0;">
+        <div class="hill-shape hill-2"></div>
+        <div class="hill-shape hill-3"></div>
+      </div>
+
+      <!-- Trees back -->
+      <div class="diorama-layer layer-4" data-speed="0.45" style="position:absolute;inset:0;">
+        <div class="paper-tree tree-left">
+          <div class="tree-top"></div>
+          <div class="tree-top-2"></div>
+          <div class="tree-trunk"></div>
+        </div>
+        <div class="paper-tree tree-right">
+          <div class="tree-top"></div>
+          <div class="tree-top-2"></div>
+          <div class="tree-trunk"></div>
+        </div>
+      </div>
+
+      <!-- Trees mid -->
+      <div class="diorama-layer layer-5" data-speed="0.55" style="position:absolute;inset:0;">
+        <div class="paper-tree tree-mid-l">
+          <div class="tree-top"
+            style="border-bottom-color:#6B9070;border-left-width:20px;border-right-width:20px;border-bottom-width:44px;">
+          </div>
+          <div class="tree-trunk"></div>
+        </div>
+        <div class="paper-tree tree-mid-r">
+          <div class="tree-top"
+            style="border-bottom-color:#8AAE8A;border-left-width:20px;border-right-width:20px;border-bottom-width:44px;">
+          </div>
+          <div class="tree-trunk"></div>
+        </div>
+      </div>
+
+      <!-- Ground -->
+      <div class="diorama-layer layer-5" data-speed="0.65" style="position:absolute;inset:0;">
+        <div class="layer-ground"></div>
+      </div>
+    </div>
+
+    <!-- Hero content (on top of diorama) -->
+    <div class="hero-content" id="hero-content" data-speed="0.05">
+
+      <!-- Paper cutout character -->
+      <div class="character" id="character">
+        <div class="char-arm-l"></div>
+        <div class="char-arm-r"></div>
+        <div class="char-head"></div>
+        <div class="char-body"></div>
+        <div class="char-leg-l"></div>
+        <div class="char-leg-r"></div>
+        <div class="char-shadow"></div>
+      </div>
+
+      <h1 class="hero-name">Hi, I'm <span>Abhishek Verma</span></h1>
+
+      <div class="hero-role-wrap">
+        <div class="role-rotator" id="role-rotator">
+          <span class="role-text" id="role-text">AI Engineer 🤖</span>
+        </div>
+      </div>
+
+      <p style="font-size:1.05rem;color:var(--brown-mid);max-width:500px;line-height:1.7;">
+        I build intelligent systems, train models, wrangle data, and ship fast APIs —
+        all with a love for <strong style="color:var(--terra)">craft</strong> and <strong
+          style="color:var(--sage)">clarity</strong>.
+      </p>
+
+      <div class="hero-cta">
+        <a href="#roles" class="btn-primary" id="see-work-btn">See my work ✨</a>
+        <a href="#contact" class="btn-secondary" id="say-hello-btn">Say hello 👋</a>
+      </div>
+    </div>
+
+    <!-- Scroll hint -->
+    <div class="scroll-hint" id="scroll-hint">
+      scroll
+      <div class="scroll-arrow"></div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════════════════════════════════
+     TORN PAPER DIVIDER
+════════════════════════════════════════════════════════════ -->
+  <div class="torn-divider">
+    <svg viewBox="0 0 1440 54" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="none" style="height:54px;">
+      <path
+        d="M0,0 L0,28 C12,20 20,34 32,28 C44,22 52,38 66,30 C80,22 90,40 104,32 C118,24 128,38 142,28 C156,18 164,36 178,26 C192,16 200,34 216,24 C232,14 242,32 256,22 C270,12 280,30 294,20 C308,10 318,28 332,18 C346,8 358,26 372,16 C386,6 396,24 410,14 C424,4 434,22 448,12 C462,2 472,20 488,10 C504,0 514,18 528,8 C542,0 552,16 568,6 C582,0 592,16 608,6 C622,0 632,14 648,4 C662,0 672,14 688,4 C702,0 712,14 728,4 C742,0 752,14 768,4 C784,0 794,14 808,4 C822,0 832,12 848,4 C862,0 872,12 888,4 C902,0 912,12 928,4 C942,0 952,12 968,4 C984,0 994,12 1008,4 C1022,0 1032,12 1048,2 C1062,0 1072,10 1088,2 C1104,0 1114,10 1128,2 C1142,0 1152,10 1168,2 C1184,0 1196,10 1210,2 C1224,0 1234,10 1248,2 C1264,0 1274,10 1290,2 C1306,0 1316,10 1330,2 C1344,0 1358,8 1374,2 C1388,0 1400,8 1416,2 L1440,0 L1440,54 L0,54 Z"
+        fill="#F5EDD8" />
+    </svg>
+  </div>
+
+  <!-- ═══════════════════════════════════════════════════════════
+     ABOUT
+════════════════════════════════════════════════════════════ -->
+  <div id="about" style="background:#EDE3CC; padding-top:0;">
+    <!-- Top wavy paper edge -->
+    <div class="torn-divider" style="transform:scaleY(-1);margin-top:-2px;">
+      <svg viewBox="0 0 1440 54" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="none" style="height:54px;">
+        <path
+          d="M0,0 L0,28 C14,20 24,36 38,28 C52,20 62,38 78,28 C94,18 104,36 118,26 C132,16 142,34 158,24 C174,14 184,32 200,22 C216,12 226,30 242,20 C258,10 268,28 284,18 C300,8 310,26 326,16 C342,6 352,24 368,14 C384,4 394,22 408,12 C424,2 434,20 450,10 C466,0 476,18 492,8 C508,0 520,16 536,6 C550,0 560,16 576,6 C592,0 602,14 618,4 C634,0 644,14 660,4 C676,0 686,14 702,4 C718,0 730,14 746,4 C762,0 774,14 790,4 C806,0 818,12 834,4 C850,0 860,12 876,4 C892,0 902,12 918,4 C934,0 944,12 960,4 C976,0 990,12 1006,4 C1022,0 1034,12 1050,2 C1066,0 1076,10 1092,2 C1108,0 1120,10 1136,2 C1152,0 1164,10 1178,2 C1194,0 1206,10 1220,2 C1236,0 1248,10 1264,2 C1280,0 1290,10 1306,2 C1322,0 1334,10 1348,2 C1364,0 1376,8 1392,2 C1408,0 1420,8 1436,2 L1440,0 L1440,54 L0,54 Z"
+          fill="#EDE3CC" />
+      </svg>
+    </div>
+
+    <div class="about-inner" style="padding-top: 60px; padding-bottom: 80px;">
+      <div class="about-text reveal slide-left">
+        <div class="section-label">About Me</div>
+        <h2 class="section-title">Crafting intelligence,<br />one layer at a time</h2>
+        <p>
+          I'm a <strong>multi-disciplinary tech professional</strong> with deep roots in AI, machine learning,
+          and data science. Think of me as someone who can design a neural architecture in the morning,
+          build a LangGraph workflow at noon, and ship a FastAPI service by evening.
+        </p>
+        <p>
+          My work lives at the intersection of <strong>rigorous data thinking</strong> and
+          <strong>pragmatic engineering</strong>. I love turning messy, high-dimensional problems
+          into clean, explainable systems.
+        </p>
+        <p>
+          When I'm not training models, I'm building tools that make AI <strong>accessible, reliable,
+            and just a little bit magical</strong>.
+        </p>
+
+        <div style="margin-top:32px; display:flex; gap:16px; flex-wrap:wrap;">
+          <div
+            style="text-align:center; padding:20px; background:white; border:3px solid var(--brown-deep); border-radius:16px; box-shadow:4px 4px 0 var(--brown-deep); min-width:100px;">
+            <div style="font-family:var(--ff-head); font-size:2rem; font-weight:900; color:var(--terra);">0</div>
+            <div style="font-family:var(--ff-head); font-size:0.75rem; font-weight:700; color:var(--brown-mid);">Years
+              Exp</div>
+          </div>
+          <div
+            style="text-align:center; padding:20px; background:white; border:3px solid var(--brown-deep); border-radius:16px; box-shadow:4px 4px 0 var(--brown-deep); min-width:100px;">
+            <div style="font-family:var(--ff-head); font-size:2rem; font-weight:900; color:var(--sage);">30+</div>
+            <div style="font-family:var(--ff-head); font-size:0.75rem; font-weight:700; color:var(--brown-mid);">
+              Projects</div>
+          </div>
+          <div
+            style="text-align:center; padding:20px; background:white; border:3px solid var(--brown-deep); border-radius:16px; box-shadow:4px 4px 0 var(--brown-deep); min-width:100px;">
+            <div style="font-family:var(--ff-head); font-size:2rem; font-weight:900; color:var(--dusty-blue);">5</div>
+            <div style="font-family:var(--ff-head); font-size:0.75rem; font-weight:700; color:var(--brown-mid);">
+              Disciplines</div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Corkboard -->
+      <div class="corkboard reveal slide-right reveal-delay-1">
+        <div class="corkboard-title">📌 Tech Stack</div>
+        <div class="sticker-grid" id="sticker-grid">
+          <span class="sticker sticker-blue">🧠 LangChain</span>
+          <span class="sticker sticker-terra">🔗 LangGraph</span>
+          <span class="sticker sticker-mustard">🐍 Python</span>
+          <span class="sticker sticker-sage">🤗 HuggingFace</span>
+          <span class="sticker sticker-blue">🔥 PyTorch</span>
+          <span class="sticker sticker-lavender">🤖 OpenAI API</span>
+          <span class="sticker sticker-brown">📊 Pandas</span>
+          <span class="sticker sticker-mustard">🔢 NumPy</span>
+          <span class="sticker sticker-sage">📈 Scikit-learn</span>
+          <span class="sticker sticker-terra">⚡ FastAPI</span>
+          <span class="sticker sticker-blue">🗄️ PostgreSQL</span>
+          <span class="sticker sticker-lavender">🔴 Redis</span>
+          <span class="sticker sticker-brown">🐳 Docker</span>
+          <span class="sticker sticker-mustard">🔎 Elasticsearch</span>
+          <span class="sticker sticker-sage">📉 Matplotlib</span>
+          <span class="sticker sticker-terra">🌊 Kafka</span>
+          <span class="sticker sticker-blue">☁️ AWS</span>
+          <span class="sticker sticker-brown">🧪 MLflow</span>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ═══════════════════════════════════════════════════════════
+     TORN DIVIDER (into roles)
+════════════════════════════════════════════════════════════ -->
+  <div class="torn-divider">
+    <svg viewBox="0 0 1440 54" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="none" style="height:54px;">
+      <path
+        d="M0,0 L0,28 C12,18 22,36 36,26 C50,16 60,34 76,24 C92,14 102,32 118,22 C134,12 144,30 160,20 C176,10 186,28 202,18 C218,8 228,26 244,16 C260,6 270,24 286,14 C302,4 312,22 328,12 C344,2 354,20 370,10 C386,0 398,18 412,8 C428,0 438,16 454,6 C470,0 480,16 496,6 C512,0 522,14 538,4 C554,0 564,14 580,4 C596,0 606,14 622,4 C638,0 648,14 664,4 C680,0 692,14 708,4 C724,0 736,14 752,4 C768,0 778,12 794,4 C810,0 820,12 836,4 C852,0 862,12 878,4 C894,0 904,12 920,4 C936,0 946,12 962,4 C978,0 990,12 1006,4 C1022,0 1034,12 1050,2 C1066,0 1076,10 1092,2 C1108,0 1120,10 1136,2 C1152,0 1162,10 1178,2 C1194,0 1204,10 1220,2 C1236,0 1246,10 1262,2 C1278,0 1290,10 1306,2 C1322,0 1334,10 1350,2 C1366,0 1378,8 1394,2 C1410,0 1422,8 1438,2 L1440,0 L1440,54 L0,54 Z"
+        fill="#EDE3CC" />
+    </svg>
+  </div>
+
+  <!-- ═══════════════════════════════════════════════════════════
+     ROLES
+════════════════════════════════════════════════════════════ -->
+  <div id="roles">
+    <div class="roles-inner">
+      <div class="roles-header reveal">
+        <div class="section-label" style="justify-content:center;">What I Build</div>
+        <h2 class="section-title" style="font-size:clamp(2rem,4vw,2.8rem);">
+          Five disciplines,<br />one craftsperson
+        </h2>
+        <p class="section-subtitle" style="margin:0 auto;text-align:center;">
+          Click each hat I wear to see the tools and props of the trade.
+        </p>
+      </div>
+
+      <!-- Tabs -->
+      <div class="role-tabs reveal reveal-delay-1">
+        <button class="role-tab active" id="tab-ai" onclick="switchRole('ai')" data-role="ai">
+          <span>🧠 AI Engineer</span>
+        </button>
+        <button class="role-tab" id="tab-ds" onclick="switchRole('ds')" data-role="ds">
+          <span>🔬 Data Scientist</span>
+        </button>
+        <button class="role-tab" id="tab-ml" onclick="switchRole('ml')" data-role="ml">
+          <span>⚙️ ML Engineer</span>
+        </button>
+        <button class="role-tab" id="tab-da" onclick="switchRole('da')" data-role="da">
+          <span>📊 Data Analyst</span>
+        </button>
+        <button class="role-tab" id="tab-be" onclick="switchRole('be')" data-role="be">
+          <span>🚀 Backend Engineer</span>
+        </button>
+      </div>
+
+      <!-- ── AI Engineer Panel ────────────────────────────── -->
+      <div class="role-panel active" id="panel-ai">
+        <div class="role-info slide-left visible">
+          <div class="role-icon-wrap">🧠</div>
+          <h3 class="role-name">AI Engineer</h3>
+          <p class="role-desc">
+            I design and ship AI-powered systems — from RAG pipelines and agentic workflows
+            to LLM fine-tuning and prompt engineering. My specialty is turning LLM chaos
+            into reliable, observable, production-grade intelligence.
+          </p>
+          <div class="role-skills">
+            <span class="role-skill-pill pill-blue">LangChain</span>
+            <span class="role-skill-pill pill-terra">LangGraph</span>
+            <span class="role-skill-pill pill-sage">OpenAI API</span>
+            <span class="role-skill-pill pill-blue">RAG Systems</span>
+            <span class="role-skill-pill pill-mustard">Prompt Eng.</span>
+            <span class="role-skill-pill pill-terra">Vector DBs</span>
+          </div>
+        </div>
+        <div class="role-prop-stage">
+          <!-- Brain cutout -->
+          <div class="prop brain-cutout prop-anim-left" style="top:18px;left:50%;transform:translateX(-50%);">
+            <!-- Circuit SVG lines -->
+            <svg style="position:absolute;inset:0;width:100%;height:100%;opacity:0.5;" viewBox="0 0 160 140">
+              <line x1="20" y1="40" x2="60" y2="40" stroke="white" stroke-width="2" stroke-dasharray="5,4" />
+              <circle cx="60" cy="40" r="4" fill="white" />
+              <line x1="60" y1="40" x2="60" y2="80" stroke="white" stroke-width="2" stroke-dasharray="5,4" />
+              <circle cx="60" cy="80" r="4" fill="white" />
+              <line x1="60" y1="80" x2="100" y2="80" stroke="white" stroke-width="2" stroke-dasharray="5,4" />
+              <circle cx="100" cy="80" r="4" fill="white" />
+              <line x1="100" y1="80" x2="100" y2="50" stroke="white" stroke-width="2" stroke-dasharray="5,4" />
+              <circle cx="100" cy="50" r="4" fill="white" />
+              <line x1="100" y1="50" x2="140" y2="50" stroke="white" stroke-width="2" stroke-dasharray="5,4" />
+              <line x1="80" y1="20" x2="80" y2="60" stroke="rgba(255,255,255,0.6)" stroke-width="1.5"
+                stroke-dasharray="3,3" />
+            </svg>
+          </div>
+          <!-- Corkboard mini with flowchart cards -->
+          <div class="corkboard-mini prop-anim-bottom" style="bottom:0;left:10px;right:10px;height:170px;">
+            <div class="cork-card" style="--r:-2deg;">📥 User Query</div>
+            <div class="cork-card" style="--r:1deg;">🔍 Retriever</div>
+            <div class="cork-card" style="--r:-1.5deg;">🧠 LLM</div>
+            <div class="cork-card" style="--r:2deg;">📤 Response</div>
+            <div class="cork-card" style="--r:-1deg;">🔗 LangGraph</div>
+            <div class="cork-card" style="--r:1.5deg;">⚡ Tool Call</div>
+          </div>
+          <!-- String pins SVG -->
+          <svg class="prop prop-anim-right" style="position:absolute;top:60%;left:0;width:100%;height:40%;opacity:0.6;"
+            viewBox="0 0 300 120">
+            <line x1="50" y1="20" x2="250" y2="80" stroke="#7A5530" stroke-width="1.5" stroke-dasharray="4,3" />
+            <circle cx="50" cy="20" r="5" fill="#CC2222" />
+            <circle cx="150" cy="54" r="5" fill="#CC2222" />
+            <circle cx="250" cy="80" r="5" fill="#CC2222" />
+            <line x1="80" y1="90" x2="200" y2="30" stroke="#7A5530" stroke-width="1.5" stroke-dasharray="4,3" />
+            <circle cx="80" cy="90" r="5" fill="#D4A843" />
+            <circle cx="200" cy="30" r="5" fill="#D4A843" />
+          </svg>
+        </div>
+      </div>
+
+      <!-- ── Data Scientist Panel ────────────────────────── -->
+      <div class="role-panel" id="panel-ds">
+        <div class="role-info">
+          <div class="role-icon-wrap">🔬</div>
+          <h3 class="role-name">Data Scientist</h3>
+          <p class="role-desc">
+            From exploratory data analysis to statistical modeling and ML experiments —
+            I extract signal from noise. I build reproducible research pipelines and
+            communicate findings with compelling, clear visualizations.
+          </p>
+          <div class="role-skills">
+            <span class="role-skill-pill pill-mustard">Scikit-learn</span>
+            <span class="role-skill-pill pill-terra">Statsmodels</span>
+            <span class="role-skill-pill pill-sage">Matplotlib</span>
+            <span class="role-skill-pill pill-blue">Seaborn</span>
+            <span class="role-skill-pill pill-mustard">Plotly</span>
+            <span class="role-skill-pill pill-terra">Jupyter</span>
+          </div>
+        </div>
+        <div class="role-prop-stage">
+          <!-- Magnifier -->
+          <div class="prop magnifier prop-anim-right"></div>
+          <!-- Bar chart -->
+          <div class="prop bar-chart prop-anim-bottom">
+            <div class="bar" style="height:80%;background:var(--terra);"></div>
+            <div class="bar" style="height:55%;background:var(--mustard);"></div>
+            <div class="bar" style="height:95%;background:var(--sage);"></div>
+            <div class="bar" style="height:65%;background:var(--dusty-blue);"></div>
+            <div class="bar" style="height:40%;background:var(--lavender);"></div>
+            <div class="bar" style="height:75%;background:var(--terra);"></div>
+          </div>
+          <!-- Scatter dots decoration -->
+          <svg class="prop prop-anim-left" style="position:absolute;top:10px;left:10px;width:120px;height:100px;"
+            viewBox="0 0 120 100">
+            <circle cx="20" cy="70" r="6" fill="var(--terra)" opacity="0.7" />
+            <circle cx="45" cy="45" r="8" fill="var(--mustard)" opacity="0.7" />
+            <circle cx="70" cy="30" r="5" fill="var(--sage)" opacity="0.7" />
+            <circle cx="90" cy="55" r="7" fill="var(--dusty-blue)" opacity="0.7" />
+            <circle cx="35" cy="80" r="4" fill="var(--lavender)" opacity="0.7" />
+            <circle cx="60" cy="60" r="6" fill="var(--terra)" opacity="0.5" />
+            <line x1="15" y1="95" x2="110" y2="95" stroke="var(--brown-deep)" stroke-width="2" />
+            <line x1="15" y1="95" x2="15" y2="5" stroke="var(--brown-deep)" stroke-width="2" />
+          </svg>
+        </div>
+      </div>
+
+      <!-- ── ML Engineer Panel ───────────────────────────── -->
+      <div class="role-panel" id="panel-ml">
+        <div class="role-info">
+          <div class="role-icon-wrap">⚙️</div>
+          <h3 class="role-name">ML Engineer</h3>
+          <p class="role-desc">
+            I take models from notebook to production. Model packaging, serving, monitoring,
+            and retraining pipelines are my territory. PyTorch, HuggingFace transformers,
+            and MLflow are my daily tools.
+          </p>
+          <div class="role-skills">
+            <span class="role-skill-pill pill-terra">PyTorch</span>
+            <span class="role-skill-pill pill-blue">HuggingFace</span>
+            <span class="role-skill-pill pill-sage">MLflow</span>
+            <span class="role-skill-pill pill-mustard">ML Algos</span>
+            <span class="role-skill-pill pill-terra">Scikit-learn</span>
+            <span class="role-skill-pill pill-blue">Deep Learning</span>
+          </div>
+        </div>
+        <div class="role-prop-stage">
+          <!-- Spreadsheet stack (NumPy/Pandas) -->
+          <div class="spreadsheet-stack prop-anim-left">
+            <div class="spreadsheet-card" style="top:0;">
+              <div
+                style="font-family:var(--ff-head);font-size:0.7rem;font-weight:800;color:var(--sage);margin-bottom:6px;">
+                🐼 DataFrame</div>
+              <div class="spreadsheet-row">
+                <div class="cell header"></div>
+                <div class="cell header"></div>
+                <div class="cell header"></div>
+                <div class="cell header"></div>
+              </div>
+              <div class="spreadsheet-row">
+                <div class="cell data-1"></div>
+                <div class="cell data-2"></div>
+                <div class="cell data-1"></div>
+                <div class="cell data-2"></div>
+              </div>
+              <div class="spreadsheet-row">
+                <div class="cell data-2"></div>
+                <div class="cell data-1"></div>
+                <div class="cell data-2"></div>
+                <div class="cell data-1"></div>
+              </div>
+              <div class="spreadsheet-row">
+                <div class="cell data-1"></div>
+                <div class="cell data-2"></div>
+                <div class="cell data-1"></div>
+                <div class="cell data-2"></div>
+              </div>
+            </div>
+            <div class="spreadsheet-card" style="top:14px;transform:rotate(2deg);opacity:0.85;">
+              <div
+                style="font-family:var(--ff-head);font-size:0.7rem;font-weight:800;color:var(--mustard);margin-bottom:6px;">
+                🔢 NumPy Array</div>
+              <div class="spreadsheet-row">
+                <div class="cell data-2"></div>
+                <div class="cell data-1"></div>
+                <div class="cell data-2"></div>
+              </div>
+              <div class="spreadsheet-row">
+                <div class="cell data-1"></div>
+                <div class="cell data-2"></div>
+                <div class="cell data-1"></div>
+              </div>
+            </div>
+            <div class="spreadsheet-card" style="top:26px;transform:rotate(-2.5deg);opacity:0.7;">
+              <div
+                style="font-family:var(--ff-head);font-size:0.7rem;font-weight:800;color:var(--dusty-blue);margin-bottom:6px;">
+                📉 Training Log</div>
+              <div class="spreadsheet-row">
+                <div class="cell header"></div>
+                <div class="cell header"></div>
+              </div>
+              <div class="spreadsheet-row">
+                <div class="cell data-1"></div>
+                <div class="cell data-2"></div>
+              </div>
+            </div>
+          </div>
+          <!-- Neural net SVG -->
+          <svg class="prop prop-anim-right"
+            style="position:absolute;bottom:10px;left:50%;transform:translateX(-50%);width:220px;height:160px;"
+            viewBox="0 0 220 160">
+            <!-- Nodes -->
+            <circle cx="20" cy="40" r="10" fill="var(--terra)" stroke="var(--brown-deep)" stroke-width="2" />
+            <circle cx="20" cy="80" r="10" fill="var(--terra)" stroke="var(--brown-deep)" stroke-width="2" />
+            <circle cx="20" cy="120" r="10" fill="var(--terra)" stroke="var(--brown-deep)" stroke-width="2" />
+            <circle cx="90" cy="30" r="10" fill="var(--sage)" stroke="var(--brown-deep)" stroke-width="2" />
+            <circle cx="90" cy="65" r="10" fill="var(--sage)" stroke="var(--brown-deep)" stroke-width="2" />
+            <circle cx="90" cy="100" r="10" fill="var(--sage)" stroke="var(--brown-deep)" stroke-width="2" />
+            <circle cx="90" cy="135" r="10" fill="var(--sage)" stroke="var(--brown-deep)" stroke-width="2" />
+            <circle cx="160" cy="55" r="10" fill="var(--dusty-blue)" stroke="var(--brown-deep)" stroke-width="2" />
+            <circle cx="160" cy="105" r="10" fill="var(--dusty-blue)" stroke="var(--brown-deep)" stroke-width="2" />
+            <circle cx="210" cy="80" r="10" fill="var(--mustard)" stroke="var(--brown-deep)" stroke-width="2" />
+            <!-- Connections -->
+            <g stroke="rgba(61,43,31,0.2)" stroke-width="1.5">
+              <line x1="30" y1="40" x2="80" y2="30" />
+              <line x1="30" y1="40" x2="80" y2="65" />
+              <line x1="30" y1="40" x2="80" y2="100" />
+              <line x1="30" y1="40" x2="80" y2="135" />
+              <line x1="30" y1="80" x2="80" y2="30" />
+              <line x1="30" y1="80" x2="80" y2="65" />
+              <line x1="30" y1="80" x2="80" y2="100" />
+              <line x1="30" y1="80" x2="80" y2="135" />
+              <line x1="30" y1="120" x2="80" y2="30" />
+              <line x1="30" y1="120" x2="80" y2="65" />
+              <line x1="30" y1="120" x2="80" y2="100" />
+              <line x1="30" y1="120" x2="80" y2="135" />
+              <line x1="100" y1="30" x2="150" y2="55" />
+              <line x1="100" y1="30" x2="150" y2="105" />
+              <line x1="100" y1="65" x2="150" y2="55" />
+              <line x1="100" y1="65" x2="150" y2="105" />
+              <line x1="100" y1="100" x2="150" y2="55" />
+              <line x1="100" y1="100" x2="150" y2="105" />
+              <line x1="100" y1="135" x2="150" y2="55" />
+              <line x1="100" y1="135" x2="150" y2="105" />
+              <line x1="170" y1="55" x2="200" y2="80" />
+              <line x1="170" y1="105" x2="200" y2="80" />
+            </g>
+          </svg>
+        </div>
+      </div>
+
+      <!-- ── Data Analyst Panel ──────────────────────────── -->
+      <div class="role-panel" id="panel-da">
+        <div class="role-info">
+          <div class="role-icon-wrap">📊</div>
+          <h3 class="role-name">Data Analyst</h3>
+          <p class="role-desc">
+            Raw data in, insight out. I write complex SQL queries, build dashboards, and
+            deliver business intelligence that drives decisions. Every dataset tells a story —
+            I help you read it.
+          </p>
+          <div class="role-skills">
+            <span class="role-skill-pill pill-blue">PostgreSQL</span>
+            <span class="role-skill-pill pill-terra">SQL Server</span>
+            <span class="role-skill-pill pill-sage">Tableau</span>
+            <span class="role-skill-pill pill-mustard">Power BI</span>
+            <span class="role-skill-pill pill-blue">dbt</span>
+            <span class="role-skill-pill pill-terra">Airflow</span>
+          </div>
+        </div>
+        <div class="role-prop-stage">
+          <!-- Magnifying glass over chart -->
+          <div class="prop prop-anim-right"
+            style="position:absolute;top:10px;right:20px;width:90px;height:90px;border:8px solid var(--dusty-blue);border-radius:50%;box-shadow:3px 3px 0 #3A6080,var(--paper-shadow);">
+            <div
+              style="position:absolute;bottom:-34px;right:-18px;width:12px;height:44px;background:var(--dusty-blue);border-radius:4px;transform:rotate(-40deg);box-shadow:2px 2px 0 #3A6080;">
+            </div>
+          </div>
+          <!-- DB cylinder -->
+          <div class="db-cylinder prop-anim-bottom">
+            <div class="db-top"></div>
+            <div class="db-body"></div>
+            <div class="db-bottom"></div>
+          </div>
+          <!-- Table cards -->
+          <div class="table-card tc-1 prop-anim-left">
+            <div style="font-weight:700;color:var(--terra);margin-bottom:4px;">📋 users</div>
+            <div>id | name | email</div>
+            <div style="opacity:0.6;">─────────────</div>
+            <div>1 | Alex | …</div>
+            <div>2 | Sam | …</div>
+          </div>
+          <div class="table-card tc-2 prop-anim-right">
+            <div style="font-weight:700;color:var(--sage);margin-bottom:4px;">📋 events</div>
+            <div>id | user_id | ts</div>
+            <div style="opacity:0.6;">─────────────</div>
+            <div>1 | 2 | 2024…</div>
+          </div>
+        </div>
+      </div>
+
+      <!-- ── Python Backend Panel ────────────────────────── -->
+      <div class="role-panel" id="panel-be">
+        <div class="role-info">
+          <div class="role-icon-wrap">🚀</div>
+          <h3 class="role-name">Python Backend Engineer</h3>
+          <p class="role-desc">
+            I build fast, async, production-ready APIs with FastAPI. From Redis caching
+            layers to Kafka event streams and Celery task queues — my backends are
+            built to scale and built to last.
+          </p>
+          <div class="role-skills">
+            <span class="role-skill-pill pill-terra">FastAPI</span>
+            <span class="role-skill-pill pill-blue">Redis</span>
+            <span class="role-skill-pill pill-sage">Celery</span>
+            <span class="role-skill-pill pill-mustard">Kafka</span>
+            <span class="role-skill-pill pill-terra">SQLAlchemy</span>
+            <span class="role-skill-pill pill-blue">Docker</span>
+          </div>
+        </div>
+        <div class="role-prop-stage">
+          <!-- Rocket -->
+          <div class="rocket-wrap prop-anim-right">
+            <div class="rocket-body"></div>
+            <div class="rocket-trail">
+              <div class="trail-line" style="width:28px;"></div>
+              <div class="trail-line" style="width:20px;opacity:0.6;"></div>
+              <div class="trail-line" style="width:14px;opacity:0.4;"></div>
+            </div>
+          </div>
+          <!-- Lightning bolt (Redis) -->
+          <div class="lightning-bolt prop-anim-left">⚡</div>
+          <!-- API card -->
+          <div class="prop prop-anim-bottom"
+            style="position:absolute;bottom:16px;left:10px;right:10px;background:white;border:3px solid var(--brown-deep);border-radius:14px;box-shadow:4px 4px 0 var(--brown-deep);padding:16px;">
+            <div
+              style="font-family:var(--ff-head);font-weight:800;font-size:0.8rem;color:var(--terra);margin-bottom:10px;">
+              ⚡ FastAPI Endpoints</div>
+            <div
+              style="font-family:'Courier New',monospace;font-size:0.68rem;color:var(--brown-mid);display:flex;flex-direction:column;gap:4px;">
+              <div><span style="color:var(--sage);font-weight:700;">GET</span> /api/v1/predict</div>
+              <div><span style="color:var(--dusty-blue);font-weight:700;">POST</span> /api/v1/chat</div>
+              <div><span style="color:var(--mustard);font-weight:700;">PUT</span> /api/v1/model/reload</div>
+              <div><span style="color:var(--terra);font-weight:700;">WS</span> /ws/stream</div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div><!-- /roles-inner -->
+  </div><!-- /#roles -->
+
+  <!-- ═══════════════════════════════════════════════════════════
+     TORN DIVIDER (into projects)
+════════════════════════════════════════════════════════════ -->
+  <div class="torn-divider">
+    <svg viewBox="0 0 1440 54" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="none" style="height:54px;">
+      <path
+        d="M0,54 L0,26 C14,34 24,18 38,26 C52,34 62,16 78,26 C94,36 104,18 118,28 C132,38 142,20 158,30 C174,40 184,22 200,32 C216,42 226,24 242,34 C258,44 268,26 284,36 C300,46 310,28 326,38 C342,48 352,30 368,40 C384,50 394,32 408,42 C424,52 434,34 450,44 C466,54 476,36 492,46 C508,54 520,38 536,48 C550,54 560,38 576,48 C592,54 602,40 618,50 C634,54 644,40 660,50 C676,54 686,40 702,50 C718,54 730,40 746,50 C762,54 774,40 790,50 C806,54 818,42 834,50 C850,54 860,42 876,50 C892,54 902,42 918,50 C934,54 944,42 960,50 C976,54 990,42 1006,50 C1022,54 1034,42 1050,52 C1066,54 1076,44 1092,52 C1108,54 1120,44 1136,52 C1152,54 1164,44 1178,52 C1194,54 1206,44 1220,52 C1236,54 1248,44 1264,52 C1280,54 1290,44 1306,52 C1322,54 1334,44 1350,52 C1366,54 1378,46 1394,52 C1410,54 1422,46 1438,52 L1440,54 L1440,0 L0,0 Z"
+        fill="#EDE3CC" />
+    </svg>
+  </div>
+
+  <!-- ═══════════════════════════════════════════════════════════
+     PROJECTS
+════════════════════════════════════════════════════════════ -->
+  <div id="projects" style="background:var(--cream); padding: 80px 0;">
+    <div class="projects-inner">
+      <div class="reveal">
+        <div class="section-label">Featured Work</div>
+        <h2 class="section-title">Projects I'm proud of</h2>
+        <p class="section-subtitle">
+          A selection of real-world builds — AI systems, data pipelines, and backend services.
+        </p>
+      </div>
+
+      <div class="project-filters reveal"
+        style="display:flex; justify-content:center; flex-wrap:wrap; gap:12px; margin-bottom:40px;">
+        <button class="filter-btn active" data-filter="all">All</button>
+        <button class="filter-btn" data-filter="ai">AI Engineer</button>
+        <button class="filter-btn" data-filter="ds">Data Scientist</button>
+        <button class="filter-btn" data-filter="ml">ML Engineer</button>
+        <button class="filter-btn" data-filter="da">Data Analyst</button>
+        <button class="filter-btn" data-filter="be">Backend Engineer</button>
+      </div>
+
+      <div class="projects-grid">
+
+        <div class="project-card paper-flutter reveal" data-roles="ai be">
+          <div class="project-card-header">
+            <span class="project-icon">🤖</span>
+            <h3 class="project-title">AI Research Agent</h3>
+          </div>
+          <div class="project-card-body">
+            <p class="project-desc">
+              A multi-step autonomous AI agent built with LangGraph that decomposes complex queries, researches sources,
+              and synthesizes structured reports.
+            </p>
+            <div class="project-tags">
+              <span class="project-tag pill-blue">LangGraph</span>
+              <span class="project-tag pill-terra">Python</span>
+              <span class="project-tag pill-sage">Gemini Flash</span>
+              <span class="project-tag pill-mustard">Streamlit</span>
+            </div>
+          </div>
+          <div class="project-card-footer">
+            <a href="https://github.com/Abhishek0p/AI-research-agent" target="_blank" rel="noopener" class="card-link">⭐
+              GitHub</a>
+          </div>
+        </div>
+
+        <div class="project-card paper-flutter reveal" data-roles="ai ds">
+          <div class="project-card-header">
+            <span class="project-icon">🧠</span>
+            <h3 class="project-title">RAG Document Q&A</h3>
+          </div>
+          <div class="project-card-body">
+            <p class="project-desc">
+              Production-grade Retrieval-Augmented Generation (RAG) pipeline to query documents securely without
+              hallucinations using Gemini API and ChromaDB.
+            </p>
+            <div class="project-tags">
+              <span class="project-tag pill-terra">FastAPI</span>
+              <span class="project-tag pill-sage">LangChain</span>
+              <span class="project-tag pill-blue">ChromaDB</span>
+              <span class="project-tag pill-mustard">Gemini API</span>
+            </div>
+          </div>
+          <div class="project-card-footer">
+            <a href="https://github.com/Abhishek0p/RAG-document-QNA" target="_blank" rel="noopener" class="card-link">⭐
+              GitHub</a>
+          </div>
+        </div>
+
+        <div class="project-card paper-flutter reveal" data-roles="ds ml da">
+          <div class="project-card-header">
+            <span class="project-icon">📉</span>
+            <h3 class="project-title">Churn Prediction Pipeline</h3>
+          </div>
+          <div class="project-card-body">
+            <p class="project-desc">
+              End-to-end machine learning pipeline predicting customer churn. Features MLflow tracking, multi-model
+              comparison, and a Streamlit dashboard with SHAP explainability.
+            </p>
+            <div class="project-tags">
+              <span class="project-tag pill-blue">XGBoost</span>
+              <span class="project-tag pill-terra">MLflow</span>
+              <span class="project-tag pill-sage">Streamlit</span>
+              <span class="project-tag pill-mustard">Python</span>
+            </div>
+          </div>
+          <div class="project-card-footer">
+            <a href="https://github.com/Abhishek0p/churn_prediction_pipeline" target="_blank" rel="noopener"
+              class="card-link">⭐ GitHub</a>
+          </div>
+        </div>
+
+        <div class="project-card paper-flutter reveal" data-roles="ml ai">
+          <div class="project-card-header">
+            <span class="project-icon">📸</span>
+            <h3 class="project-title">Face Recognition System</h3>
+          </div>
+          <div class="project-card-body">
+            <p class="project-desc">
+              A real-time face recognition attendance system built using OpenCV and Python. Features automated model
+              training using local binary pattern histograms.
+            </p>
+            <div class="project-tags">
+              <span class="project-tag pill-sage">OpenCV</span>
+              <span class="project-tag pill-blue">Python</span>
+              <span class="project-tag pill-terra">Tkinter</span>
+              <span class="project-tag pill-mustard">MySQL</span>
+            </div>
+          </div>
+          <div class="project-card-footer">
+            <a href="https://github.com/Abhishek0p/face-regonition" target="_blank" rel="noopener" class="card-link">⭐
+              GitHub</a>
+          </div>
+        </div>
+
+        <div class="project-card paper-flutter reveal" data-roles="ml ai ds">
+          <div class="project-card-header">
+            <span class="project-icon">✨</span>
+            <h3 class="project-title">LR to SR Image Convertor</h3>
+          </div>
+          <div class="project-card-body">
+            <p class="project-desc">
+              Deep learning computer vision model to upscale Low Resolution (LR) images into Super Resolution (SR)
+              images using Convolutional Neural Networks.
+            </p>
+            <div class="project-tags">
+              <span class="project-tag pill-mustard">Deep Learning</span>
+              <span class="project-tag pill-terra">PyTorch</span>
+              <span class="project-tag pill-blue">CNNs</span>
+              <span class="project-tag pill-sage">Computer Vision</span>
+            </div>
+          </div>
+          <div class="project-card-footer">
+            <a href="https://github.com/Abhishek0p/LR-to-SR-Image-Convertor" target="_blank" rel="noopener"
+              class="card-link">⭐ GitHub</a>
+          </div>
+        </div>
+
+        <div class="project-card paper-flutter reveal" data-roles="da ds">
+          <div class="project-card-header">
+            <span class="project-icon">📊</span>
+            <h3 class="project-title">E-Commerce Sales Analytics</h3>
+          </div>
+          <div class="project-card-body">
+            <p class="project-desc">
+              End-to-end data analysis for an e-commerce platform. Features advanced SQL queries, data cleaning with
+              Pandas, and interactive Tableau dashboards.
+            </p>
+            <div class="project-tags">
+              <span class="project-tag pill-blue">SQL</span>
+              <span class="project-tag pill-terra">Pandas</span>
+              <span class="project-tag pill-sage">Tableau</span>
+              <span class="project-tag pill-mustard">Python</span>
+            </div>
+          </div>
+          <div class="project-card-footer">
+            <a href="https://github.com/Abhishek0p/ecommerce-sales-analytics" target="_blank" rel="noopener"
+              class="card-link">⭐ GitHub</a>
+          </div>
+        </div>
+
+        <div class="project-card paper-flutter reveal" data-roles="be">
+          <div class="project-card-header">
+            <span class="project-icon">🔗</span>
+            <h3 class="project-title">URL Shortener (Shortly)</h3>
+          </div>
+          <div class="project-card-body">
+            <p class="project-desc">
+              A high-performance URL shortener backed by modern web frameworks. Demonstrates quick routing, database
+              modeling, and clean frontend UI integration.
+            </p>
+            <div class="project-tags">
+              <span class="project-tag pill-terra">Next.js</span>
+              <span class="project-tag pill-blue">Node.js</span>
+              <span class="project-tag pill-sage">React</span>
+              <span class="project-tag pill-mustard">Tailwind</span>
+            </div>
+          </div>
+          <div class="project-card-footer">
+            <a href="https://shortly-abhishek0p.vercel.app/" target="_blank" rel="noopener" class="card-link">🔗
+              Demo</a>
+            <a href="https://github.com/Abhishek0p/url-shortener" target="_blank" rel="noopener" class="card-link">⭐
+              GitHub</a>
+          </div>
+        </div>
+
+        <div class="project-card paper-flutter reveal" data-roles="ai be ds">
+          <div class="project-card-header">
+            <span class="project-icon">🎓</span>
+            <h3 class="project-title">AI Evaluator for Exams</h3>
+          </div>
+          <div class="project-card-body">
+            <p class="project-desc">
+              A responsive web app that evaluates handwritten physics exams using Gemini API, overlaying red-pen
+              corrections directly onto student answer sheets.
+            </p>
+            <div class="project-tags">
+              <span class="project-tag pill-sage">React</span>
+              <span class="project-tag pill-mustard">Gemini API</span>
+              <span class="project-tag pill-blue">Computer Vision</span>
+            </div>
+          </div>
+          <div class="project-card-footer">
+            <a href="https://github.com/Abhishek0p/ai-evaluation" target="_blank" rel="noopener" class="card-link">⭐
+              GitHub</a>
+          </div>
+        </div>
+
+        <div class="project-card paper-flutter reveal" data-roles="ai ml be">
+          <div class="project-card-header">
+            <span class="project-icon">🎬</span>
+            <h3 class="project-title">AI Video Pipeline</h3>
+          </div>
+          <div class="project-card-body">
+            <p class="project-desc">
+              An end-to-end Python pipeline that auto-generates short-form videos with Gemini scripts, edge-tts
+              voiceovers, and programmatically edits clips with moviepy.
+            </p>
+            <div class="project-tags">
+              <span class="project-tag pill-blue">Python</span>
+              <span class="project-tag pill-terra">MoviePy</span>
+              <span class="project-tag pill-sage">Gemini Flash</span>
+            </div>
+          </div>
+          <div class="project-card-footer">
+            <a href="https://github.com/Abhishek0p/ai-video-pipeline" target="_blank" rel="noopener" class="card-link">⭐
+              GitHub</a>
+          </div>
+        </div>
+
+        <div class="project-card paper-flutter reveal" data-roles="ai be da">
+          <div class="project-card-header">
+            <span class="project-icon">📝</span>
+            <h3 class="project-title">AI Survey App</h3>
+          </div>
+          <div class="project-card-body">
+            <p class="project-desc">
+              A dynamic AI-driven surveying tool that adapts questions based on user responses and provides real-time
+              backend data analytics.
+            </p>
+            <div class="project-tags">
+              <span class="project-tag pill-terra">FastAPI</span>
+              <span class="project-tag pill-mustard">OpenAI</span>
+              <span class="project-tag pill-blue">React</span>
+            </div>
+          </div>
+          <div class="project-card-footer">
+            <a href="https://github.com/Abhishek0p/aisurvey-app" target="_blank" rel="noopener" class="card-link">⭐
+              GitHub</a>
+          </div>
+        </div>
+
+        <div class="project-card paper-flutter reveal" data-roles="da ds">
+          <div class="project-card-header">
+            <span class="project-icon">📈</span>
+            <h3 class="project-title">Customer Trends Analysis</h3>
+          </div>
+          <div class="project-card-body">
+            <p class="project-desc">
+              In-depth exploratory data analysis (EDA) pipeline identifying shifting customer behavioral trends using
+              Pandas, Seaborn, and statistical testing.
+            </p>
+            <div class="project-tags">
+              <span class="project-tag pill-blue">Python</span>
+              <span class="project-tag pill-sage">Pandas</span>
+              <span class="project-tag pill-terra">Seaborn</span>
+            </div>
+          </div>
+          <div class="project-card-footer">
+            <a href="https://github.com/Abhishek0p/customer-trends-data-analysis" target="_blank" rel="noopener"
+              class="card-link">⭐ GitHub</a>
+          </div>
+        </div>
+
+        <div class="project-card paper-flutter reveal" data-roles="da">
+          <div class="project-card-header">
+            <span class="project-icon">🎯</span>
+            <h3 class="project-title">Marketing Campaign Tracker</h3>
+          </div>
+          <div class="project-card-body">
+            <p class="project-desc">
+              A BI dashboard and SQL tracking system built to monitor marketing ROAS, conversion metrics, and A/B test
+              results across multiple digital channels.
+            </p>
+            <div class="project-tags">
+              <span class="project-tag pill-terra">SQL</span>
+              <span class="project-tag pill-mustard">Tableau</span>
+              <span class="project-tag pill-blue">Excel</span>
+            </div>
+          </div>
+          <div class="project-card-footer">
+            <a href="https://github.com/Abhishek0p/marketing-campaign-tracker" target="_blank" rel="noopener"
+              class="card-link">⭐ GitHub</a>
+          </div>
+        </div>
+
+        <div class="project-card paper-flutter reveal" data-roles="ds ml ai">
+          <div class="project-card-header">
+            <span class="project-icon">🍿</span>
+            <h3 class="project-title">Movies Recommender System</h3>
+          </div>
+          <div class="project-card-body">
+            <p class="project-desc">
+              A content-based machine learning recommendation engine utilizing cosine similarity on vectorized movie
+              metadata and natural language descriptions.
+            </p>
+            <div class="project-tags">
+              <span class="project-tag pill-sage">Scikit-Learn</span>
+              <span class="project-tag pill-blue">NLTK</span>
+              <span class="project-tag pill-mustard">Pandas</span>
+            </div>
+          </div>
+          <div class="project-card-footer">
+            <a href="https://github.com/Abhishek0p/movies-recommender-system" target="_blank" rel="noopener"
+              class="card-link">⭐ GitHub</a>
+          </div>
+        </div>
+
+        <div class="project-card paper-flutter reveal" data-roles="ai ds ml">
+          <div class="project-card-header">
+            <span class="project-icon">💬</span>
+            <h3 class="project-title">NLP Sentiment Engine</h3>
+          </div>
+          <div class="project-card-body">
+            <p class="project-desc">
+              Advanced NLP pipeline processing unstructured text data to perform granular sentiment analysis using
+              transformer-based models (HuggingFace).
+            </p>
+            <div class="project-tags">
+              <span class="project-tag pill-terra">HuggingFace</span>
+              <span class="project-tag pill-blue">Transformers</span>
+              <span class="project-tag pill-sage">PyTorch</span>
+            </div>
+          </div>
+          <div class="project-card-footer">
+            <a href="https://github.com/Abhishek0p/nlp_sentiment_engine" target="_blank" rel="noopener"
+              class="card-link">⭐ GitHub</a>
+          </div>
+        </div>
+
+        <div class="project-card paper-flutter reveal" data-roles="ai be ds">
+          <div class="project-card-header">
+            <span class="project-icon">💼</span>
+            <h3 class="project-title">Skill-to-Job Matcher</h3>
+          </div>
+          <div class="project-card-body">
+            <p class="project-desc">
+              A parsing and matching engine evaluating parsed resumes against job descriptions using semantic similarity
+              and skill embeddings.
+            </p>
+            <div class="project-tags">
+              <span class="project-tag pill-blue">SpaCy</span>
+              <span class="project-tag pill-mustard">Python</span>
+              <span class="project-tag pill-terra">FastAPI</span>
+            </div>
+          </div>
+          <div class="project-card-footer">
+            <a href="https://github.com/Abhishek0p/skill-to-job" target="_blank" rel="noopener" class="card-link">⭐
+              GitHub</a>
+          </div>
+        </div>
+
+      </div><!-- /projects-grid -->
+    </div><!-- /projects-inner -->
+  </div>
+
+  <!-- ═══════════════════════════════════════════════════════════
+     TORN DIVIDER (into contact)
+════════════════════════════════════════════════════════════ -->
+  <div class="torn-divider">
+    <svg viewBox="0 0 1440 54" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="none" style="height:54px;">
+      <path
+        d="M0,0 L0,28 C12,20 20,34 32,28 C44,22 52,38 66,30 C80,22 90,40 104,32 C118,24 128,38 142,28 C156,18 164,36 178,26 C192,16 200,34 216,24 C232,14 242,32 256,22 C270,12 280,30 294,20 C308,10 318,28 332,18 C346,8 358,26 372,16 C386,6 396,24 410,14 C424,4 434,22 448,12 C462,2 472,20 488,10 C504,2 514,18 528,8 C542,2 552,16 568,6 C582,2 592,16 608,6 C622,2 632,14 648,4 C662,2 672,14 688,4 C702,2 712,14 728,4 C742,2 752,14 768,4 C784,2 794,14 808,4 C822,2 832,12 848,4 C862,2 872,12 888,4 C902,2 912,12 928,4 C942,2 952,12 968,4 C984,2 994,12 1008,4 C1022,2 1032,12 1048,2 C1062,0 1072,10 1088,2 C1104,0 1114,10 1128,2 C1142,0 1152,10 1168,2 C1184,0 1196,10 1210,2 C1224,0 1234,10 1248,2 C1264,0 1274,10 1290,2 C1306,0 1316,10 1330,2 C1344,0 1358,8 1374,2 C1388,0 1400,8 1416,2 L1440,0 L1440,54 L0,54 Z"
+        fill="var(--cream)" />
+    </svg>
+  </div>
+
+  <!-- ═══════════════════════════════════════════════════════════
+     CONTACT
+════════════════════════════════════════════════════════════ -->
+  <div id="contact" style="background:#EDE3CC; padding: 80px 0;">
+    <div class="contact-inner">
+      <div class="reveal" style="text-align:center; margin-bottom: 48px;">
+        <div class="section-label" style="justify-content:center;">Get In Touch</div>
+        <h2 class="section-title">Let's build something<br />wonderful together</h2>
+      </div>
+
+      <div class="contact-card reveal">
+        <div class="contact-left">
+          <div class="section-label">Contact</div>
+          <h3 class="contact-heading">Always open to new adventures 🌟</h3>
+          <p class="contact-body">
+            Whether you have a project idea, a collaboration in mind, or just want to talk AI —
+            I'm all ears. My inbox is always open.
+          </p>
+          <div class="contact-links">
+            <a href="mailto:abhisek8393@gmail.com" class="contact-link-item">
+              <div class="contact-link-icon">📧</div>
+              abhisek8393@gmail.com
+            </a>
+            <a href="https://www.linkedin.com/in/abhishek-verma83/" class="contact-link-item" target="_blank"
+              rel="noopener">
+              <div class="contact-link-icon">💼</div>
+              linkedin.com/in/abhishek-verma83/
+            </a>
+            <a href="https://github.com/Abhishek0p" class="contact-link-item" target="_blank" rel="noopener">
+              <div class="contact-link-icon">🐙</div>
+              github.com/Abhishek0p
+            </a>
+          </div>
+        </div>
+
+        <div class="contact-right">
+          <form class="contact-form" id="contact-form" onsubmit="handleFormSubmit(event)">
+            <div class="form-group">
+              <label class="form-label" for="form-name">Your Name</label>
+              <input class="form-input" type="text" id="form-name" name="name" placeholder="Sam Builder" required />
+            </div>
+            <div class="form-group">
+              <label class="form-label" for="form-email">Email Address</label>
+              <input class="form-input" type="email" id="form-email" name="email" placeholder="sam@example.com"
+                required />
+            </div>
+            <div class="form-group">
+              <label class="form-label" for="form-subject">Subject</label>
+              <input class="form-input" type="text" id="form-subject" name="subject"
+                placeholder="Let's build something!" />
+            </div>
+            <div class="form-group">
+              <label class="form-label" for="form-message">Message</label>
+              <textarea class="form-textarea" id="form-message" name="message"
+                placeholder="Tell me about your project..." required></textarea>
+            </div>
+            <button type="submit" class="form-submit" id="form-submit-btn">
+              Send Message ✉️
+            </button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ═══════════════════════════════════════════════════════════
+     FOOTER
+════════════════════════════════════════════════════════════ -->
+  <footer>
+    <p>Handcrafted with <span>♥</span> by Abhishek Verma · Built with vanilla HTML, CSS & JS · <span>© 2026</span></p>
+    <p style="margin-top:6px;opacity:0.5;font-size:0.75rem;">Paper-cutout diorama made with CSS shapes — no images
+      harmed in the making.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+
+</html>
